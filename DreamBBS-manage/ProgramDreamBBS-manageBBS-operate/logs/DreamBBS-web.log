@@ -1,0 +1,34 @@
+2023-06-10 01:23:21 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 26376 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 01:23:21 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 01:23:22 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 01:23:22 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 01:23:22 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 01:23:22 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 01:23:22 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 01:23:22 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1083 ms
+2023-06-10 01:23:23 [WARN][org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration][checkTemplateLocationExists][65]-> Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-06-10 01:23:23 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7070"]
+2023-06-10 01:23:23 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7070 (http) with context path '/api'
+2023-06-10 01:23:23 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarted][61]-> Started DreamBBSWebApplication in 2.632 seconds (JVM running for 4.194)
+2023-06-10 01:23:39 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 01:23:39 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2023-06-10 01:23:39 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2023-06-10 02:49:13 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 26580 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 02:49:13 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 02:49:14 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 02:49:14 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 02:49:14 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 02:49:14 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 02:49:14 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 02:49:14 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 944 ms
+2023-06-10 02:49:15 [WARN][org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration][checkTemplateLocationExists][65]-> Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-06-10 02:49:15 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7070"]
+2023-06-10 02:49:15 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7070 (http) with context path '/api'
+2023-06-10 02:49:15 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarted][61]-> Started DreamBBSWebApplication in 2.314 seconds (JVM running for 3.9)
+2023-06-10 02:50:51 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 02:50:51 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2023-06-10 02:50:51 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2023-06-10 02:50:52 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2023-06-10 02:50:52 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2023-06-10 02:56:15 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2023-06-10 02:56:15 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
