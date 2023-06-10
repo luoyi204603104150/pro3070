@@ -2,11 +2,15 @@ package com.DreamBBS.service.impl;
 
 import java.beans.Transient;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
+import com.DreamBBS.config.WebConfig;
 import com.DreamBBS.entity.constants.Constants;
+import com.DreamBBS.entity.dto.SessionWebUserDto;
 import com.DreamBBS.entity.enums.*;
 import com.DreamBBS.entity.po.UserIntegralRecord;
 import com.DreamBBS.entity.po.UserMessage;
@@ -15,6 +19,11 @@ import com.DreamBBS.entity.query.UserMessageQuery;
 import com.DreamBBS.exception.BusinessException;
 import com.DreamBBS.mappers.UserIntegralRecordMapper;
 import com.DreamBBS.mappers.UserMessageMapper;
+import com.DreamBBS.utils.JsonUtils;
+import com.DreamBBS.utils.OKHttpUtils;
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.DreamBBS.entity.query.UserInfoQuery;
@@ -27,12 +36,14 @@ import com.DreamBBS.utils.StringTools;
 import org.springframework.transaction.annotation.Transactional;
 
 
+
 /**
  * 用户信息 业务接口实现
  */
 @Service("userInfoService")
 public class UserInfoServiceImpl implements UserInfoService {
-
+	//调用日志
+	private static final Logger logger = LoggerFactory.getLogger(UserInfoService.class);
 	@Resource
 	private UserInfoMapper<UserInfo, UserInfoQuery> userInfoMapper;
 
@@ -41,6 +52,9 @@ public class UserInfoServiceImpl implements UserInfoService {
 
 	@Resource
 	private UserIntegralRecordMapper<UserIntegralRecord, UserIntegralRecordQuery> userIntegralRecordMapper;
+
+	@Resource
+	private WebConfig webConfig;
 
 
 	/**
@@ -236,6 +250,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 	}
 
 
+	//用户积分更新
 	@Transactional(rollbackFor = Exception.class)
 	public void updateUserIntegral(String userId, UserIntegralOperTypeEnum operTypeEnum, Integer changeType, Integer integral) {
 		integral = changeType * integral;
@@ -262,5 +277,80 @@ public class UserInfoServiceImpl implements UserInfoService {
 			throw new BusinessException("更新用户积分失败");
 		}
 	}
+
+	//用户登入
+	@Override
+	public SessionWebUserDto login(String email, String password, String ip) {
+		UserInfo userInfo = this.userInfoMapper.selectByEmail(email);
+		//如果未查找到账号或者密码错误抛出异常
+		if (null == userInfo || !userInfo.getPassword().equals(password)) {
+			throw new BusinessException("账号或者密码错误");
+		}
+		//如果账号状态为1则提示禁用
+		if (UserStatusEnum.DISABLE.getStatus().equals(userInfo.getStatus())) {
+			throw new BusinessException("账号已禁用");
+		}
+
+		UserInfo updateInfo = new UserInfo();
+		updateInfo.setLastLoginTime(new Date());
+		updateInfo.setLastLoginIp(ip);
+
+		Map<String, String> addressInfo = getIpAddress(ip);
+		String pro = addressInfo.get("pro");
+		pro = StringTools.isEmpty(pro) ? Constants.PRO_UNKNOWN : pro;
+		updateInfo.setLastLoginIpAddress(pro);
+		this.userInfoMapper.updateByUserId(updateInfo, userInfo.getUserId());
+		SessionWebUserDto sessionWebUserDto = new SessionWebUserDto();
+		sessionWebUserDto.setNickName(userInfo.getNickName());
+		sessionWebUserDto.setProvince(pro);
+		sessionWebUserDto.setUserId(userInfo.getUserId());
+
+		//判断管理员邮箱设置不为空且用户邮箱与管理员邮箱设置相同
+		if (!StringTools.isEmpty(webConfig.getAdminEmails()) && ArrayUtils.contains(webConfig.getAdminEmails().split(","), userInfo.getEmail())) {
+			sessionWebUserDto.setAdmin(true);
+		} else {
+			sessionWebUserDto.setAdmin(false);
+		}
+		return sessionWebUserDto;
+	}
+
+
+	//获取ip
+
+	public Map<String, String> getIpAddress(String ip) {
+		Map<String, String> addressInfo = new HashMap<>();
+		try {
+			String url = "http://whois.pconline.com.cn/ipJson.jsp?json=true&ip=" + ip;
+			String responseJson = OKHttpUtils.getRequest(url);
+			if (StringTools.isEmpty(responseJson)) {
+				return addressInfo;
+			}
+			addressInfo = JsonUtils.convertJson2Obj(responseJson, Map.class);
+			return addressInfo;
+		} catch (Exception e) {
+			logger.error("获取ip所在地失败");
+		}
+		return addressInfo;
+	}
+
+
+	@Override
+	@Transactional(rollbackFor = Exception.class)
+	public void resetPwd(String email, String password) {
+		//选择邮箱
+		UserInfo userInfo = this.userInfoMapper.selectByEmail(email);
+		if (null == userInfo) {
+			throw new BusinessException("邮箱账号不存在");
+		}
+
+		//更新密码
+		UserInfo updateInfo = new UserInfo();
+		updateInfo.setPassword(password);
+		//同步数据
+		this.userInfoMapper.updateByEmail(updateInfo, email);
+	}
+
+
+
 
 }

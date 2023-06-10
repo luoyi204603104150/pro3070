@@ -1,5 +1,7 @@
 package com.DreamBBS.controller;
 
+import com.DreamBBS.entity.constants.Constants;
+import com.DreamBBS.entity.dto.SessionWebUserDto;
 import com.DreamBBS.entity.po.UserInfo;
 import com.DreamBBS.entity.vo.ResponseVO;
 import com.DreamBBS.service.UserInfoService;
@@ -8,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
@@ -36,6 +39,40 @@ public class AccountController extends ABaseController{
         userInfoService.register(email,nickName,password);
         return getSuccessResponseVO(null);
 
+
+    }
+
+    //登入
+    @RequestMapping("/login")
+    public ResponseVO login(HttpSession session, HttpServletRequest request,String email, String password) {
+
+
+        SessionWebUserDto sessionWebUserDto = userInfoService.login(email, password, getIpAddr(request));
+        session.setAttribute(Constants.SESSION_KEY, sessionWebUserDto);
+        return getSuccessResponseVO(null);
+
+    }
+
+    //获取用户信息
+    @RequestMapping("/getUserInfo")
+    public ResponseVO getUserInfo(HttpSession session) {
+        SessionWebUserDto sessionWebUserDto = getUserInfoFromSession(session);
+        return getSuccessResponseVO(sessionWebUserDto);
+    }
+
+    //退出登录
+    @RequestMapping("/logout")
+    public ResponseVO logout(HttpSession session) {
+        session.invalidate();
+        return getSuccessResponseVO(null);
+    }
+
+    //重置密码
+    @RequestMapping("/resetPwd")
+    public ResponseVO resetPwd(HttpSession session, String email, String password) {
+
+        userInfoService.resetPwd(email, password);
+        return getSuccessResponseVO(null);
 
     }
 
