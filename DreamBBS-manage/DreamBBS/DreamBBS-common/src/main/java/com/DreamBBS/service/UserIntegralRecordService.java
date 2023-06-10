@@ -69,4 +69,6 @@ public interface UserIntegralRecordService {
 	 */
 	Integer deleteUserIntegralRecordByRecordId(Integer recordId);
 
+
+
 }

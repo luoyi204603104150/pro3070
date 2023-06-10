@@ -1,16 +1,22 @@
 package com.DreamBBS.service.impl;
 
+import java.beans.Transient;
 import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
 
 import com.DreamBBS.entity.constants.Constants;
-import com.DreamBBS.entity.enums.UserStatusEnum;
+import com.DreamBBS.entity.enums.*;
+import com.DreamBBS.entity.po.UserIntegralRecord;
+import com.DreamBBS.entity.po.UserMessage;
+import com.DreamBBS.entity.query.UserIntegralRecordQuery;
+import com.DreamBBS.entity.query.UserMessageQuery;
 import com.DreamBBS.exception.BusinessException;
+import com.DreamBBS.mappers.UserIntegralRecordMapper;
+import com.DreamBBS.mappers.UserMessageMapper;
 import org.springframework.stereotype.Service;
 
-import com.DreamBBS.entity.enums.PageSize;
 import com.DreamBBS.entity.query.UserInfoQuery;
 import com.DreamBBS.entity.po.UserInfo;
 import com.DreamBBS.entity.vo.PaginationResultVO;
@@ -18,6 +24,7 @@ import com.DreamBBS.entity.query.SimplePage;
 import com.DreamBBS.mappers.UserInfoMapper;
 import com.DreamBBS.service.UserInfoService;
 import com.DreamBBS.utils.StringTools;
+import org.springframework.transaction.annotation.Transactional;
 
 
 /**
@@ -28,6 +35,13 @@ public class UserInfoServiceImpl implements UserInfoService {
 
 	@Resource
 	private UserInfoMapper<UserInfo, UserInfoQuery> userInfoMapper;
+
+	@Resource
+	private UserMessageMapper<UserMessage, UserMessageQuery> userMessageMapper;
+
+	@Resource
+	private UserIntegralRecordMapper<UserIntegralRecord, UserIntegralRecordQuery> userIntegralRecordMapper;
+
 
 	/**
 	 * 根据条件查询列表
@@ -180,6 +194,10 @@ public class UserInfoServiceImpl implements UserInfoService {
 		return this.userInfoMapper.deleteByNickName(nickName);
 	}
 
+	//检测数据,抛出异常回滚数据
+	@Transactional(rollbackFor = Exception.class)
+
+	//注册
 	public void register(String email,String nickName,String password){
 		//效验是否有相同邮箱和昵称
 		UserInfo userInfo = this.userInfoMapper.selectByEmail(email);
@@ -203,5 +221,46 @@ public class UserInfoServiceImpl implements UserInfoService {
 		userInfo.setTotalIntegral(0);
 		userInfo.setCurrentIntegral(0);
 		this.userInfoMapper.insert(userInfo);
+
+
+		//更新用户积分
+		updateUserIntegral(userId,UserIntegralOperTypeEnum.REGISTER,UserIntegralChangeTypeEnum.ADD.getChangeType(),Constants.integral_5);
+		//发送信息
+		UserMessage userMessage = new UserMessage();
+		userMessage.setReceivedUserId(userId);
+		userMessage.setMessageType(MessageTypeEnum.SYS.getType());
+		userMessage.setCreateTime(new Date());
+		userMessage.setStatus(MessageStatusEnum.NO_READ.getStatus());
+		userMessage.setMessageContent("感觉画质不如原神");
+		userMessageMapper.insert(userMessage);
 	}
+
+
+	@Transactional(rollbackFor = Exception.class)
+	public void updateUserIntegral(String userId, UserIntegralOperTypeEnum operTypeEnum, Integer changeType, Integer integral) {
+		integral = changeType * integral;
+
+		if (integral == 0) {
+			return;
+		}
+
+		UserInfo userInfo = userInfoMapper.selectByUserId(userId);
+		if (UserIntegralChangeTypeEnum.REDUCE.getChangeType().equals(changeType) && userInfo.getCurrentIntegral() + integral < 0) {
+			integral = changeType * userInfo.getCurrentIntegral();
+		}
+
+		//检查变动类型,如果是扣除积分,变量乘-1
+		UserIntegralRecord record = new UserIntegralRecord();
+		record.setUserId(userId);
+		record.setOperType(operTypeEnum.getOperType());
+		record.setCreateTime(new Date());
+		record.setIntegral(integral);
+		this.userIntegralRecordMapper.insert(record);
+
+		Integer count = this.userInfoMapper.updateIntegral(userId, integral);
+		if (count == 0) {
+			throw new BusinessException("更新用户积分失败");
+		}
+	}
+
 }

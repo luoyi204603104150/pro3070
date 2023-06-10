@@ -2,6 +2,7 @@ package com.DreamBBS.service;
 
 import java.util.List;
 
+import com.DreamBBS.entity.enums.UserIntegralOperTypeEnum;
 import com.DreamBBS.entity.query.UserInfoQuery;
 import com.DreamBBS.entity.po.UserInfo;
 import com.DreamBBS.entity.vo.PaginationResultVO;
@@ -104,5 +105,8 @@ public interface UserInfoService {
 	 * 根据NickName删除
 	 */
 	Integer deleteUserInfoByNickName(String nickName);
+
+	void register(String email,String nickName,String password);
+	void updateUserIntegral(String userId, UserIntegralOperTypeEnum operTypeEnum, Integer changeType, Integer integral);
 
 }
