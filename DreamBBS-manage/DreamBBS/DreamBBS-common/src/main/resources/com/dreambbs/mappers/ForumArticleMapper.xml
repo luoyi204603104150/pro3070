@@ -185,6 +185,19 @@
 			<if test="query.lastUpdateTimeEnd!= null and query.lastUpdateTimeEnd!=''">
 				 <![CDATA[ and  last_update_time< date_sub(str_to_date(#{query.lastUpdateTimeEnd},'%Y-%m-%d'),interval -1 day) ]]>
 			</if>
+
+		 <if test="query.commentUserId!=null and query.commentUserId!=''">
+			 and article_id in(select article_id from forum_comment where user_id = #{query.commentUserId})
+			 and status = 1
+		 </if>
+
+		 <if test="query.likeUserId!=null and query.likeUserId!=''">
+			 and article_id in(select object_id from like_record where user_id = #{query.likeUserId} and op_type=0)
+		 </if>
+		 <!-- 查询状态0禁用1启用-->
+		 <if test="query.currentUserId!=null">
+			 and (status = 1 or (status = 0 and user_id = #{query.currentUserId}))
+		 </if>
 	 </where>
 	</sql>
 

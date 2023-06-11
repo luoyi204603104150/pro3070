@@ -1,9 +1,15 @@
 package com.DreamBBS.service.impl;
 
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import javax.annotation.Resource;
 
+import com.DreamBBS.entity.enums.CommentStatusEnum;
+import com.DreamBBS.entity.po.ForumArticle;
+import com.DreamBBS.mappers.ForumArticleMapper;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import com.DreamBBS.entity.enums.PageSize;
@@ -25,12 +31,36 @@ public class ForumCommentServiceImpl implements ForumCommentService {
 	@Resource
 	private ForumCommentMapper<ForumComment, ForumCommentQuery> forumCommentMapper;
 
+	@Resource
+	private ForumArticleMapper<ForumArticle, ForumCommentQuery> forumArticleMapper;
+
+	@Resource
+	@Lazy
+	private ForumCommentServiceImpl forumCommentService;
+
 	/**
 	 * 根据条件查询列表
 	 */
 	@Override
 	public List<ForumComment> findListByParam(ForumCommentQuery param) {
-		return this.forumCommentMapper.selectList(param);
+		List<ForumComment> list = this.forumCommentMapper.selectList(param);
+		//获取二级评论
+		if (param.getLoadChildren() != null && param.getLoadChildren()) {
+			ForumCommentQuery subQuery = new ForumCommentQuery();
+			subQuery.setQueryLikeType(param.getQueryLikeType());
+			subQuery.setCurrentUserId(param.getCurrentUserId());
+			subQuery.setArticleId(param.getArticleId());
+			subQuery.setLoadChildren(param.getLoadChildren());
+			subQuery.setStatus(CommentStatusEnum.NORMAL.getStatus());
+			subQuery.setOnlyQueryChildren(true);
+			List<ForumComment> subCommentList = this.forumCommentMapper.selectList(subQuery);
+			Map<Integer, List<ForumComment>> tempMap = subCommentList.stream().collect(Collectors.groupingBy(ForumComment::getpCommentId));
+			list.forEach(item -> {
+				item.setChildren(tempMap.get(item.getCommentId()));
+			});
+		}
+
+		return list;
 	}
 
 	/**
