@@ -1,5 +1,6 @@
 package com.DreamBBS.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -50,10 +51,12 @@ public class ForumCommentServiceImpl implements ForumCommentService {
 			subQuery.setQueryLikeType(param.getQueryLikeType());
 			subQuery.setCurrentUserId(param.getCurrentUserId());
 			subQuery.setArticleId(param.getArticleId());
-			subQuery.setLoadChildren(param.getLoadChildren());
-			subQuery.setStatus(CommentStatusEnum.NORMAL.getStatus());
-			subQuery.setOnlyQueryChildren(true);
+			subQuery.setStatus(param.getStatus());
+
+			List<Integer> pcommentIdList = list.stream().map(ForumComment::getCommentId).distinct().collect(Collectors.toList());
+			subQuery.setPcommentIdList(pcommentIdList);
 			List<ForumComment> subCommentList = this.forumCommentMapper.selectList(subQuery);
+
 			Map<Integer, List<ForumComment>> tempMap = subCommentList.stream().collect(Collectors.groupingBy(ForumComment::getpCommentId));
 			list.forEach(item -> {
 				item.setChildren(tempMap.get(item.getCommentId()));

@@ -89,11 +89,17 @@ public class ForumComment implements Serializable {
 	 */
 	private Integer status;
 
-	//点赞类型 1为点赞 空为未点赞
+	//点赞类型 1为点赞 0为未点赞
 	private Integer likeType;
+
+	private List<ForumComment> children;
 
 	public Integer getLikeType() {
 		return likeType;
+	}
+
+	public void setLikeType(Integer likeType) {
+		this.likeType = likeType;
 	}
 
 	public void setCommentId(Integer commentId){
@@ -208,9 +214,13 @@ public class ForumComment implements Serializable {
 		return this.status;
 	}
 
-	private List<ForumComment> children;
+
 	public void setChildren(List<ForumComment> children) {
 		this.children = children;
+	}
+
+	public List<ForumComment> getChildren() {
+		return children;
 	}
 
 	@Override

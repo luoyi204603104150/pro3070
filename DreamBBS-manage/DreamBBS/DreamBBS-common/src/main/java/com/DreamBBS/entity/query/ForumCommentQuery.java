@@ -1,5 +1,7 @@
 package com.DreamBBS.entity.query;
 
+import java.util.List;
+
 /**
  * 评论参数
  */
@@ -115,10 +117,17 @@ public class ForumCommentQuery extends BaseParam {
     /**
      * 只查询子评论
      */
-    private Boolean onlyQueryChildren;
 
-    public Boolean getOnlyQueryChildren() {
-        return onlyQueryChildren;
+
+
+    private List<Integer> pcommentIdList;
+
+    public List<Integer> getPcommentIdList() {
+        return pcommentIdList;
+    }
+
+    public void setPcommentIdList(List<Integer> pcommentIdList) {
+        this.pcommentIdList = pcommentIdList;
     }
 
     public void setCommentId(Integer commentId) {
@@ -337,7 +346,4 @@ public class ForumCommentQuery extends BaseParam {
         this.currentUserId = currentUserId;
     }
 
-    public void setOnlyQueryChildren(Boolean onlyQueryChildren) {
-        this.onlyQueryChildren = onlyQueryChildren;
-    }
 }

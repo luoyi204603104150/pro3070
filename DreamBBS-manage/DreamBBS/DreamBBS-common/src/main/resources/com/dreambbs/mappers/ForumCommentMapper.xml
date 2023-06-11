@@ -127,10 +127,11 @@
 			</if>
 			<if test="query.postTimeEnd!= null and query.postTimeEnd!=''">
 				 <![CDATA[ and  post_time< date_sub(str_to_date(#{query.postTimeEnd},'%Y-%m-%d'),interval -1 day) ]]>
+
 			</if>
 		    <!-- 只查二级评论-->
-		    <if test="query.onlyQueryChildren!=null and query.onlyQueryChildren">
-			 and p_comment_id !=0
+		    <if test="query.pcommentIdList!=null and query.pcommentIdList.size()>0">
+			 and p_comment_id in(<foreach collection="query.pcommentIdList" item="item" separator=",">#{item}</foreach>)
 		    </if>
 		    <!-- 查询状态0禁用1启用-->
 		    <if test="query.currentUserId!=null">

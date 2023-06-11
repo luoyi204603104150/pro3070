@@ -35,13 +35,9 @@ public class ForumCommentController extends ABaseController {
     public ResponseVO loadComment(HttpSession session,String articleId, Integer pageNo, Integer orderType) {
         ForumCommentQuery commentQuery = new ForumCommentQuery();
         commentQuery.setArticleId(articleId);
-        //加载子评论
-        commentQuery.setLoadChildren(true);
         //默认使用热榜(点赞数优先,之后),置顶优先
         String orderBy = orderType == null || orderType == 0 ? "good_count desc,comment_id asc" : "comment_id desc";
         commentQuery.setOrderBy("top_type desc," + orderBy);
-        commentQuery.setPageNo(pageNo);
-
         SessionWebUserDto userDto = getUserInfoFromSession(session);
         if (userDto != null) {
             commentQuery.setQueryLikeType(true);
@@ -49,9 +45,10 @@ public class ForumCommentController extends ABaseController {
         } else {
             commentQuery.setStatus(CommentStatusEnum.NORMAL.getStatus());
         }
+        commentQuery.setPageNo(pageNo);
         commentQuery.setPageSize(PageSize.SIZE50.getSize());
-        commentQuery.setStatus(CommentStatusEnum.NORMAL.getStatus());
         commentQuery.setpCommentId(0);
+        commentQuery.setLoadChildren(true);
         return getSuccessResponseVO(forumCommentService.findListByPage(commentQuery));
     }
 
