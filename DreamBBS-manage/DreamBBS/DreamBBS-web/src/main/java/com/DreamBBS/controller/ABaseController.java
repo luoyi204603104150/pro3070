@@ -2,8 +2,10 @@ package com.DreamBBS.controller;
 import com.DreamBBS.entity.constants.Constants;
 import com.DreamBBS.entity.dto.SessionWebUserDto;
 import com.DreamBBS.entity.enums.ResponseCodeEnum;
+import com.DreamBBS.entity.vo.PaginationResultVO;
 import com.DreamBBS.entity.vo.ResponseVO;
 import com.DreamBBS.exception.BusinessException;
+import com.DreamBBS.utils.CopyTools;
 import org.yaml.snakeyaml.scanner.Constant;
 
 import javax.servlet.http.HttpServletRequest;
@@ -81,6 +83,17 @@ public class ABaseController {
     protected SessionWebUserDto getUserInfoFromSession(HttpSession session) {
         SessionWebUserDto sessionWebUserDto = (SessionWebUserDto) session.getAttribute(Constants.SESSION_KEY);
         return sessionWebUserDto;
+    }
+
+    //转换分页信息
+    protected <S, T> PaginationResultVO<T> convert2PaginationVO(PaginationResultVO<S> result, Class<T> classz) {
+        PaginationResultVO<T> resultVO = new PaginationResultVO<>();
+        resultVO.setList(CopyTools.copyList(result.getList(), classz));
+        resultVO.setPageNo(result.getPageNo());
+        resultVO.setPageSize(result.getPageSize());
+        resultVO.setPageTotal(result.getPageTotal());
+        resultVO.setTotalCount(result.getTotalCount());
+        return resultVO;
     }
 }
 

@@ -47,7 +47,7 @@
 		<result column="top_type" property="topType"  />
 		<!--0:没有附件  1:有附件-->
 		<result column="attachment_type" property="attachmentType"  />
-		<!---1已删除 0:待审核  1:已审核 -->
+		<!---1启用 0删除 -->
 		<result column="status" property="status"  />
 	</resultMap>
 
@@ -846,5 +846,23 @@
 	<select id="selectByArticleId" resultMap="base_result_map" >
 		select <include refid="base_column_list" /> from forum_article where article_id=#{articleId}
 	</select>
+
+	<!--更新贴文数据-->
+	<!--观看数:0 点赞数:1 评论数:2-->
+	<update id="updateArticleCount">
+		update forum_article
+		<set>
+			<if test="updateType==0">
+				read_count = read_count+#{changeCount},
+			</if>
+			<if test="updateType==1">
+				good_count = good_count+#{changeCount},
+			</if>
+			<if test="updateType==2">
+				comment_count = comment_count+#{changeCount},
+			</if>
+		</set>
+		where article_id=#{articleId}
+	</update>
 
 </mapper>

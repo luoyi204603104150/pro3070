@@ -1,5 +1,6 @@
 package com.DreamBBS.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -126,5 +127,26 @@ public class ForumBoardServiceImpl implements ForumBoardService {
 	@Override
 	public Integer deleteForumBoardByBoardId(Integer boardId) {
 		return this.forumBoardMapper.deleteByBoardId(boardId);
+	}
+
+	@Override
+	public List<ForumBoard> getBoardTree(Integer postType) {
+		ForumBoardQuery forumBoardQuery = new ForumBoardQuery();
+		forumBoardQuery.setOrderBy("sort asc");
+		forumBoardQuery.setPostType(postType);
+		List<ForumBoard> forumBoardList = this.forumBoardMapper.selectList(forumBoardQuery);
+		return convertLine2Tree(forumBoardList, 0);
+	}
+
+	//将线性数据转换为树形,并且递归查询子板块ForumArticleController
+	private List<ForumBoard> convertLine2Tree(List<ForumBoard> dataList, Integer pid) {
+		List<ForumBoard> children = new ArrayList();
+		for (ForumBoard m : dataList) {
+			if (m.getpBoardId().equals(pid)) {
+				m.setChildren(convertLine2Tree(dataList, m.getBoardId()));
+				children.add(m);
+			}
+		}
+		return children;
 	}
 }

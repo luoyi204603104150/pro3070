@@ -443,5 +443,15 @@ public class ForumArticleQuery extends BaseParam {
 	public Integer getStatus(){
 		return this.status;
 	}
+	//查询当前登录用户的id
+	private String currentUserId;
+
+	public String getCurrentUserId() {
+		return currentUserId;
+	}
+
+	public void setCurrentUserId(String currentUserId) {
+		this.currentUserId = currentUserId;
+	}
 
 }

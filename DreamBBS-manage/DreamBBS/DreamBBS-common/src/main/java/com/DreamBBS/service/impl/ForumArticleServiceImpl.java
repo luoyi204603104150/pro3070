@@ -4,6 +4,10 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.DreamBBS.entity.enums.ArticleStatusEnum;
+import com.DreamBBS.entity.enums.ResponseCodeEnum;
+import com.DreamBBS.entity.enums.UpdateArticleCountTypeEnum;
+import com.DreamBBS.exception.BusinessException;
 import org.springframework.stereotype.Service;
 
 import com.DreamBBS.entity.enums.PageSize;
@@ -126,5 +130,18 @@ public class ForumArticleServiceImpl implements ForumArticleService {
 	@Override
 	public Integer deleteForumArticleByArticleId(String articleId) {
 		return this.forumArticleMapper.deleteByArticleId(articleId);
+	}
+	@Override
+	public ForumArticle readArticle(String artcileId) {
+		ForumArticle forumArticle = this.forumArticleMapper.selectByArticleId(artcileId);
+		//效验参数
+		if (forumArticle == null) {
+			throw new BusinessException(ResponseCodeEnum.CODE_404);
+		}
+		//只读正常帖子,并且增加阅读数
+		if (ArticleStatusEnum.NORMAL.getStatus().equals(forumArticle.getStatus())) {
+			forumArticleMapper.updateArticleCount(UpdateArticleCountTypeEnum.READ_COUNT.getType(), 1, artcileId);
+		}
+		return forumArticle;
 	}
 }

@@ -2,6 +2,7 @@ package com.DreamBBS.entity.po;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
+import java.util.List;
 
 
 /**
@@ -45,6 +46,16 @@ public class ForumBoard implements Serializable {
 	 */
 	private Integer postType;
 
+	//定义子板块
+	private List<ForumBoard> children;
+
+	public List<ForumBoard> getChildren() {
+		return children;
+	}
+
+	public void setChildren(List<ForumBoard> children) {
+		this.children = children;
+	}
 
 	public void setBoardId(Integer boardId){
 		this.boardId = boardId;

@@ -2,6 +2,7 @@ package com.DreamBBS.service;
 
 import java.util.List;
 
+import com.DreamBBS.entity.enums.OperRecordOpTypeEnum;
 import com.DreamBBS.entity.query.LikeRecordQuery;
 import com.DreamBBS.entity.po.LikeRecord;
 import com.DreamBBS.entity.vo.PaginationResultVO;
@@ -86,5 +87,7 @@ public interface LikeRecordService {
 	 * 根据ObjectIdAndUserIdAndOpType删除
 	 */
 	Integer deleteLikeRecordByObjectIdAndUserIdAndOpType(String objectId,String userId,Integer opType);
+
+	void doLike(String objectId, String userId, String nickName, OperRecordOpTypeEnum opTypeEnum);
 
 }
