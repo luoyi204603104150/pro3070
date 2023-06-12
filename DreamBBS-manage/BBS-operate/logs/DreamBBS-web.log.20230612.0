@@ -1,0 +1,19 @@
+2023-06-12 22:17:11 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 29428 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-12 22:17:11 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-12 22:17:12 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-12 22:17:12 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-12 22:17:12 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-12 22:17:12 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-12 22:17:12 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-12 22:17:12 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1026 ms
+2023-06-12 22:17:13 [WARN][org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration][checkTemplateLocationExists][65]-> Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-06-12 22:17:13 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7070"]
+2023-06-12 22:17:13 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7070 (http) with context path '/api'
+2023-06-12 22:17:13 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarted][61]-> Started DreamBBSWebApplication in 2.459 seconds (JVM running for 4.083)
+2023-06-12 22:17:55 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-12 22:17:55 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2023-06-12 22:17:55 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2023-06-12 22:17:55 [ERROR][com.DreamBBS.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:7070/api/file/uploadImage,错误信息:
+com.DreamBBS.exception.BusinessException: 没登陆你点勾8赞呢
+2023-06-12 22:18:01 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2023-06-12 22:18:01 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.

@@ -586,5 +586,10 @@
 		where comment_id = #{commentId}
 	</update>
 
+	<update id="updateTopTypeByArticleId">
+		update forum_comment
+		set top_type = 0
+		where article_id = #{articleId}
+	</update>
 
 </mapper>

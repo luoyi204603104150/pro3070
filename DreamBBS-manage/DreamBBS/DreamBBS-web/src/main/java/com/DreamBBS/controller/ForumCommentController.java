@@ -56,13 +56,25 @@ public class ForumCommentController extends ABaseController {
     public ResponseVO doLike(HttpSession session,Integer commentId) {
         SessionWebUserDto userDto = getUserInfoFromSession(session);
         String objectId = String.valueOf(commentId);
-        //上传数据
-        likeRecordService.doLike(objectId,userDto.getUserId(),userDto.getNickName(),OperRecordOpTypeEnum.COMMENT_LIKE);
-        //返回信息
-        LikeRecord userOperRecord = likeRecordService.getLikeRecordByObjectIdAndUserIdAndOpType(objectId, userDto.getUserId(), OperRecordOpTypeEnum.COMMENT_LIKE.getType());
-        ForumComment comment = forumCommentService.getForumCommentByCommentId(commentId);
-        comment.setLikeType(userOperRecord == null ? null : 1);
-        return getSuccessResponseVO(comment);
+        if(userDto!=null){
+            //上传数据
+            likeRecordService.doLike(objectId,userDto.getUserId(),userDto.getNickName(),OperRecordOpTypeEnum.COMMENT_LIKE);
+            //返回信息
+            LikeRecord userOperRecord = likeRecordService.getLikeRecordByObjectIdAndUserIdAndOpType(objectId, userDto.getUserId(), OperRecordOpTypeEnum.COMMENT_LIKE.getType());
+            ForumComment comment = forumCommentService.getForumCommentByCommentId(commentId);
+            comment.setLikeType(userOperRecord == null ? null : 1);
+            return getSuccessResponseVO(comment);
+        }else {
+            throw new BusinessException("没登陆你点勾8赞呢");
+        }
+
+    }
+
+    @RequestMapping("/changeTopType")
+    public ResponseVO changeTopType(HttpSession session,Integer commentId,Integer topType) {
+        SessionWebUserDto userDto = getUserInfoFromSession(session);
+        forumCommentService.changeTopType(userDto.getUserId(), commentId, topType);
+        return getSuccessResponseVO(null);
     }
 
 }

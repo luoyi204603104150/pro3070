@@ -8,7 +8,10 @@ import java.util.stream.Collectors;
 import javax.annotation.Resource;
 
 import com.DreamBBS.entity.enums.CommentStatusEnum;
+import com.DreamBBS.entity.enums.CommentTopTypeEnum;
+import com.DreamBBS.entity.enums.ResponseCodeEnum;
 import com.DreamBBS.entity.po.ForumArticle;
+import com.DreamBBS.exception.BusinessException;
 import com.DreamBBS.mappers.ForumArticleMapper;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
@@ -21,6 +24,7 @@ import com.DreamBBS.entity.query.SimplePage;
 import com.DreamBBS.mappers.ForumCommentMapper;
 import com.DreamBBS.service.ForumCommentService;
 import com.DreamBBS.utils.StringTools;
+import org.springframework.transaction.annotation.Transactional;
 
 
 /**
@@ -160,4 +164,38 @@ public class ForumCommentServiceImpl implements ForumCommentService {
 	public Integer deleteForumCommentByCommentId(Integer commentId) {
 		return this.forumCommentMapper.deleteByCommentId(commentId);
 	}
+
+	@Override
+	@Transactional(rollbackFor = Exception.class)
+	public void changeTopType(String userId, Integer commentId, Integer topType) {
+		CommentTopTypeEnum typeEnum = CommentTopTypeEnum.getByType(topType);
+		if (null == typeEnum) {
+			throw new BusinessException(ResponseCodeEnum.CODE_600);
+		}
+		ForumComment forumComment = forumCommentMapper.selectByCommentId(commentId);
+		if (forumComment == null) {
+			throw new BusinessException(ResponseCodeEnum.CODE_600);
+		}
+		ForumArticle forumArticle = forumArticleMapper.selectByArticleId(forumComment.getArticleId());
+		if (forumArticle == null) {
+			throw new BusinessException(ResponseCodeEnum.CODE_600);
+		}
+
+		if (!forumArticle.getUserId().equals(userId) || forumComment.getpCommentId() != 0) {
+			throw new BusinessException(ResponseCodeEnum.CODE_600);
+		}
+		if (forumComment.getTopType().equals(topType)) {
+			return;
+		}
+
+		//置顶
+		if (CommentTopTypeEnum.TOP.getType().equals(topType)) {
+			forumCommentMapper.updateTopTypeByArticleId(forumComment.getArticleId());
+		}
+
+		ForumComment updateInfo = new ForumComment();
+		updateInfo.setTopType(topType);
+		forumCommentMapper.updateByCommentId(updateInfo, forumComment.getCommentId());
+	}
+
 }

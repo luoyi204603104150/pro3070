@@ -69,4 +69,6 @@ public interface ForumCommentService {
 	 */
 	Integer deleteForumCommentByCommentId(Integer commentId);
 
+
+	void changeTopType(String userId, Integer commentId, Integer topType);
 }

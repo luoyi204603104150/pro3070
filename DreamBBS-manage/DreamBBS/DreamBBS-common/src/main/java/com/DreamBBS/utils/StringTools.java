@@ -64,4 +64,17 @@ public class StringTools {
     public static final String getRandomNumber(Integer count) {
         return RandomStringUtils.random(count, false, true);
     }
+
+    //获取文件后缀(文件类型)
+    public static String getFileSuffix(String fileName) {
+        String suffix = fileName.substring(fileName.lastIndexOf("."));
+        return suffix;
+    }
+
+    //获取文件名
+    public static final String getFileName(String fileName) {
+        fileName = fileName.substring(0, fileName.lastIndexOf("."));
+        return fileName;
+    }
+
 }

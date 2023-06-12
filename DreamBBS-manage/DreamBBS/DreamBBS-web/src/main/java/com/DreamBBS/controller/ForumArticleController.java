@@ -50,13 +50,9 @@ public class ForumArticleController extends ABaseController {
     private ForumArticleService forumArticleService;
 
     @Resource
-    private ForumArticleAttachmentService forumArticleAttachmentService;
-
-    @Resource
-    private ForumArticleAttachmentDownloadService forumArticleAttachmentDownloadService;
-
-    @Resource
     private LikeRecordService likeRecordService;
+
+
 
     @Resource
     private UserInfoService userInfoService;
@@ -118,6 +114,7 @@ public class ForumArticleController extends ABaseController {
             throw new BusinessException("没登陆你点勾8赞呢");
         }
     }
+
 
 
 }
