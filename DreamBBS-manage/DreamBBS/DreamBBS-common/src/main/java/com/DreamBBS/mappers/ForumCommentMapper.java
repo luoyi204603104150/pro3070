@@ -24,5 +24,6 @@ public interface ForumCommentMapper<T,P> extends BaseMapper<T,P> {
 	 */
 	 T selectByCommentId(@Param("commentId") Integer commentId);
 
+	void updateCommenCount(@Param("changeCount") Integer changeCount, @Param("commentId") Integer commentId);
 
 }

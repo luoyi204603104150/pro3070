@@ -580,6 +580,11 @@
 		select <include refid="base_column_list" /> from forum_comment where comment_id=#{commentId}
 	</select>
 
+	<update id="updateCommenCount">
+		update forum_comment
+		set good_count = good_count + #{changeCount}
+		where comment_id = #{commentId}
+	</update>
 
 
 </mapper>
