@@ -169,6 +169,7 @@ public class LikeRecordServiceImpl implements LikeRecordService {
 		return this.likeRecordMapper.deleteByObjectIdAndUserIdAndOpType(objectId, userId, opType);
 	}
 
+	@Override
 	@Transactional(rollbackFor = Exception.class)
 	public void doLike(String objectId, String userId, String nickName, OperRecordOpTypeEnum opTypeEnum) {
 		UserMessage userMessage = new UserMessage();
@@ -177,8 +178,12 @@ public class LikeRecordServiceImpl implements LikeRecordService {
 		//判断点赞种类
 		switch (opTypeEnum) {
 			case ARTICLE_LIKE:
-				likeRecord = articleLike(objectId, userId, opTypeEnum);
 				ForumArticle forumArticle = forumArticleMapper.selectByArticleId(objectId);
+				if(forumArticle==null){
+					throw new BusinessException("文章不存在");
+				}
+				articleLike(objectId,forumArticle, userId, opTypeEnum);
+
 				userMessage.setArticleId(objectId);
 				userMessage.setArticleTitle("用户点赞提醒");
 				userMessage.setMessageType(MessageTypeEnum.ARTICLE_LIKE.getType());
@@ -202,25 +207,21 @@ public class LikeRecordServiceImpl implements LikeRecordService {
 		userMessage.setStatus(MessageStatusEnum.NO_READ.getStatus());
 		userMessage.setMessageContent("你的"+opTypeEnum.getDesc()+"收到了来自"+userMessage.getSendNickName()+"的点赞");
 		if (!userId.equals(userMessage.getReceivedUserId())) {
-			UserMessage dbinfo = userMessageMapper.selectByArticleIdAndCommentIdAndSendUserIdAndMessageType(userMessage.getReceivedUserId(),userMessage.getCommentId(),userMessage.getSendUserId(),userMessage.getMessageType());
+			UserMessage dbinfo = userMessageMapper.selectByArticleIdAndCommentIdAndSendUserIdAndMessageType(userMessage.getArticleId(),userMessage.getCommentId(),userMessage.getSendUserId(),userMessage.getMessageType());
 			if(dbinfo ==null){
 				userMessageMapper.insert(userMessage);
 			}
 		}
 	}
 
-	public LikeRecord articleLike(String objectId, String userId, OperRecordOpTypeEnum opTypeEnum) {
-		LikeRecord record = this.likeRecordMapper.selectByObjectIdAndUserIdAndOpType(objectId, userId, opTypeEnum.getType());
+	public LikeRecord articleLike(String objectId,ForumArticle forumArticle, String userId, OperRecordOpTypeEnum opTypeEnum) {
+		LikeRecord record = this.likeRecordMapper.selectByObjectIdAndUserIdAndOpType(objectId,userId,opTypeEnum.getType());
 		if (record != null) {
 			//从点赞表中移除
 			this.likeRecordMapper.deleteByObjectIdAndUserIdAndOpType(objectId, userId, opTypeEnum.getType());
 			//更新点赞数
 			forumArticleMapper.updateArticleCount(UpdateArticleCountTypeEnum.GOOD_COUNT.getType(), -1, objectId);
 		} else {
-			ForumArticle forumArticle = forumArticleMapper.selectByArticleId(objectId);
-			if (null == forumArticle) {
-				throw new BusinessException("文章不存在");
-			}
 			//数据插入点赞表
 			LikeRecord likeRecord = new LikeRecord();
 			likeRecord.setObjectId(objectId);

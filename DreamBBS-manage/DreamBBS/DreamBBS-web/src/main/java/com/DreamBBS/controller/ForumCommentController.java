@@ -52,4 +52,17 @@ public class ForumCommentController extends ABaseController {
         return getSuccessResponseVO(forumCommentService.findListByPage(commentQuery));
     }
 
+    /*@RequestMapping("/doLike")
+    public ResponseVO doLike(HttpSession session,Integer commentId) {
+        SessionWebUserDto userDto = getUserInfoFromSession(session);
+        String objectId = String.valueOf(commentId);
+        //上传数据
+        likeRecordService.doLike(objectId, userDto.getUserId(), userDto.getNickName(), OperRecordOpTypeEnum.COMMENT_LIKE);
+        LikeRecord userOperRecord = likeRecordService.getUserOperRecordByObjectIdAndUserIdAndOpType(objectId, userDto.getUserId(),
+                OperRecordOpTypeEnum.COMMENT_LIKE.getType());
+        ForumComment comment = forumCommentService.getForumCommentByCommentId(commentId);
+        comment.setLikeType(userOperRecord == null ? null : 1);
+        return getSuccessResponseVO(comment);
+    }*/
+
 }
