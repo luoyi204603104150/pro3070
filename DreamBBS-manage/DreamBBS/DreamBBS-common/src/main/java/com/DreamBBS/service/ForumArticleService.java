@@ -5,6 +5,8 @@ import java.util.List;
 import com.DreamBBS.entity.query.ForumArticleQuery;
 import com.DreamBBS.entity.po.ForumArticle;
 import com.DreamBBS.entity.vo.PaginationResultVO;
+import com.DreamBBS.exception.BusinessException;
+import org.springframework.web.multipart.MultipartFile;
 
 
 /**
@@ -70,4 +72,6 @@ public interface ForumArticleService {
 	Integer deleteForumArticleByArticleId(String articleId);
 
     ForumArticle readArticle(String artcileId);
+
+	void postArticle(Boolean isAdmin,ForumArticle article, MultipartFile cover) throws BusinessException;
 }

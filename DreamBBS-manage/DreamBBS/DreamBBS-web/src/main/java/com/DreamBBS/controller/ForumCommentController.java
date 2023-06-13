@@ -2,6 +2,7 @@ package com.DreamBBS.controller;
 
 
 import com.DreamBBS.controller.ABaseController;
+import com.DreamBBS.entity.constants.Constants;
 import com.DreamBBS.entity.dto.SessionWebUserDto;
 import com.DreamBBS.entity.enums.*;
 import com.DreamBBS.entity.po.ForumComment;
@@ -65,7 +66,7 @@ public class ForumCommentController extends ABaseController {
             comment.setLikeType(userOperRecord == null ? null : 1);
             return getSuccessResponseVO(comment);
         }else {
-            throw new BusinessException("没登陆你点勾8赞呢");
+            throw new BusinessException(ResponseCodeEnum.CODE_502);
         }
 
     }
@@ -76,5 +77,46 @@ public class ForumCommentController extends ABaseController {
         forumCommentService.changeTopType(userDto.getUserId(), commentId, topType);
         return getSuccessResponseVO(null);
     }
+
+    @RequestMapping("/postComment")
+
+    public ResponseVO postComment(HttpSession session, String articleId, Integer pCommentId, String content, MultipartFile image, String replyUserId) {
+
+        SessionWebUserDto userDto = getUserInfoFromSession(session);
+        if (userDto != null) {
+            //单独判断内容和图片
+            if (image == null && StringTools.isEmpty(content)) {
+                throw new BusinessException(ResponseCodeEnum.CODE_600);
+            }
+
+            ForumComment comment = new ForumComment();
+            content = StringTools.escapeHtml(content);
+            comment.setUserId(userDto.getUserId());
+            comment.setNickName(userDto.getNickName());
+            comment.setUserIpAddress(userDto.getProvince());
+            comment.setpCommentId(pCommentId);
+            comment.setArticleId(articleId);
+            comment.setContent(content);
+            comment.setReplyUserId(replyUserId);
+            comment.setTopType(CommentTopTypeEnum.NO_TOP.getType());
+            forumCommentService.postComment(comment, image);
+            //如果有2级评论会返回所有2级评论
+            if (pCommentId != 0) {
+                ForumCommentQuery commentQuery = new ForumCommentQuery();
+                commentQuery.setArticleId(articleId);
+                commentQuery.setpCommentId(pCommentId);
+                commentQuery.setOrderBy("top_type desc,comment_id asc");
+                commentQuery.setCurrentUserId(userDto.getUserId());
+                List<ForumComment> children = forumCommentService.findListByParam(commentQuery);
+                return getSuccessResponseVO(children);
+            }
+            return getSuccessResponseVO(comment);
+        } else {
+            throw new BusinessException(ResponseCodeEnum.CODE_502);
+        }
+
+
+    }
+
 
 }

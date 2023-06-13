@@ -4,6 +4,8 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class StringTools {
@@ -76,5 +78,24 @@ public class StringTools {
         fileName = fileName.substring(0, fileName.lastIndexOf("."));
         return fileName;
     }
+
+    public static String escapeHtml(String content) {
+        if (isEmpty(content)) {
+            return content;
+        }
+        content = content.replace("<", "&lt;");
+        content = content.replace(" ", "&nbsp;");
+        content = content.replace("\n", "<br>");
+        return content;
+    }
+
+    public static String escapeTitle(String content) {
+        if (isEmpty(content)) {
+            return content;
+        }
+        content = content.replace("<", "&lt;");
+        return content;
+    }
+
 
 }

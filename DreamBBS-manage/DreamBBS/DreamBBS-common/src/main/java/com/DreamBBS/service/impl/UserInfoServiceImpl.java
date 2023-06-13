@@ -19,6 +19,7 @@ import com.DreamBBS.entity.query.UserMessageQuery;
 import com.DreamBBS.exception.BusinessException;
 import com.DreamBBS.mappers.UserIntegralRecordMapper;
 import com.DreamBBS.mappers.UserMessageMapper;
+import com.DreamBBS.utils.FileUtils;
 import com.DreamBBS.utils.JsonUtils;
 import com.DreamBBS.utils.OKHttpUtils;
 import org.apache.commons.lang3.ArrayUtils;
@@ -34,7 +35,7 @@ import com.DreamBBS.mappers.UserInfoMapper;
 import com.DreamBBS.service.UserInfoService;
 import com.DreamBBS.utils.StringTools;
 import org.springframework.transaction.annotation.Transactional;
-
+import org.springframework.web.multipart.MultipartFile;
 
 
 /**
@@ -55,6 +56,9 @@ public class UserInfoServiceImpl implements UserInfoService {
 
 	@Resource
 	private WebConfig webConfig;
+
+	@Resource
+	private FileUtils fileUtils;
 
 
 	/**
@@ -348,6 +352,15 @@ public class UserInfoServiceImpl implements UserInfoService {
 		updateInfo.setPassword(password);
 		//同步数据
 		this.userInfoMapper.updateByEmail(updateInfo, email);
+	}
+
+	@Override
+	@Transactional(rollbackFor = Exception.class)
+	public void updateUserInfo(UserInfo userInfo, MultipartFile avatar) {
+		userInfoMapper.updateByUserId(userInfo, userInfo.getUserId());
+		if (avatar != null) {
+			fileUtils.uploadFile2Local(avatar, FileUploadTypeEnum.AVATAR, userInfo.getUserId());
+		}
 	}
 
 

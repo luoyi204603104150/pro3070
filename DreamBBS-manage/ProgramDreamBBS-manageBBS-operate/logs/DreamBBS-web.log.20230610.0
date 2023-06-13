@@ -1,0 +1,896 @@
+2023-06-10 01:23:21 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 26376 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 01:23:21 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 01:23:22 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 01:23:22 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 01:23:22 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 01:23:22 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 01:23:22 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 01:23:22 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1083 ms
+2023-06-10 01:23:23 [WARN][org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration][checkTemplateLocationExists][65]-> Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-06-10 01:23:23 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7070"]
+2023-06-10 01:23:23 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7070 (http) with context path '/api'
+2023-06-10 01:23:23 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarted][61]-> Started DreamBBSWebApplication in 2.632 seconds (JVM running for 4.194)
+2023-06-10 01:23:39 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 01:23:39 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2023-06-10 01:23:39 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2023-06-10 02:49:13 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 26580 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 02:49:13 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 02:49:14 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 02:49:14 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 02:49:14 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 02:49:14 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 02:49:14 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 02:49:14 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 944 ms
+2023-06-10 02:49:15 [WARN][org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration][checkTemplateLocationExists][65]-> Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-06-10 02:49:15 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7070"]
+2023-06-10 02:49:15 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7070 (http) with context path '/api'
+2023-06-10 02:49:15 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarted][61]-> Started DreamBBSWebApplication in 2.314 seconds (JVM running for 3.9)
+2023-06-10 02:50:51 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 02:50:51 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2023-06-10 02:50:51 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2023-06-10 02:50:52 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2023-06-10 02:50:52 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2023-06-10 02:56:15 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2023-06-10 02:56:15 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2023-06-10 15:37:22 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 18192 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 15:37:22 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 15:37:23 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 15:37:23 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 15:37:23 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 15:37:23 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 15:37:23 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 15:37:23 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 933 ms
+2023-06-10 15:37:23 [ERROR][org.mybatis.spring.mapper.MapperFactoryBean][checkDaoConfig][82]-> Error while adding the mapper 'interface com.DreamBBS.mappers.UserInfoMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:73)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:172)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:41002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:42008)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.DreamBBS.DreamBBSWebApplication.main(DreamBBSWebApplication.java:15)
+Caused by: org.xml.sax.SAXParseException: 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1996)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:881)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2969)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:507)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:867)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:796)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:142)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 common frames omitted
+2023-06-10 15:37:23 [WARN][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext][__refresh][591]-> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+2023-06-10 15:37:23 [INFO][org.apache.catalina.core.StandardService][log][173]-> Stopping service [Tomcat]
+2023-06-10 15:37:23 [INFO][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener][logMessage][136]-> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-10 15:37:23 [ERROR][org.springframework.boot.SpringApplication][reportFailure][819]-> Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:41002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:42008)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.DreamBBS.DreamBBSWebApplication.main(DreamBBSWebApplication.java:15)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 33 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 46 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:73)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:172)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	... 49 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1996)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:881)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2969)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:507)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:867)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:796)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:142)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 common frames omitted
+2023-06-10 15:40:06 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 16580 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 15:40:06 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 15:40:07 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 15:40:07 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 15:40:07 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 15:40:07 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 15:40:07 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 15:40:07 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 882 ms
+2023-06-10 15:40:08 [ERROR][org.mybatis.spring.mapper.MapperFactoryBean][checkDaoConfig][82]-> Error while adding the mapper 'interface com.DreamBBS.mappers.UserInfoMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:73)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:172)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:41002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:42008)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.DreamBBS.DreamBBSWebApplication.main(DreamBBSWebApplication.java:15)
+Caused by: org.xml.sax.SAXParseException: 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1996)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:881)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2969)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:507)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:867)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:796)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:142)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 common frames omitted
+2023-06-10 15:40:08 [WARN][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext][__refresh][591]-> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+2023-06-10 15:40:08 [INFO][org.apache.catalina.core.StandardService][log][173]-> Stopping service [Tomcat]
+2023-06-10 15:40:08 [INFO][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener][logMessage][136]-> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-10 15:40:08 [ERROR][org.springframework.boot.SpringApplication][reportFailure][819]-> Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:41002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:42008)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.DreamBBS.DreamBBSWebApplication.main(DreamBBSWebApplication.java:15)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 33 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 46 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 676; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:73)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:172)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	... 49 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1996)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:881)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2969)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:507)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:867)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:796)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:142)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 common frames omitted
+2023-06-10 15:55:05 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 2340 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 15:55:05 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 15:55:06 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 15:55:06 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 15:55:06 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 15:55:06 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 15:55:06 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 15:55:06 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 911 ms
+2023-06-10 15:55:07 [ERROR][org.mybatis.spring.mapper.MapperFactoryBean][checkDaoConfig][82]-> Error while adding the mapper 'interface com.DreamBBS.mappers.UserInfoMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:73)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:172)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:41002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:42008)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.DreamBBS.DreamBBSWebApplication.main(DreamBBSWebApplication.java:15)
+Caused by: org.xml.sax.SAXParseException: 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1996)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:881)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2969)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:507)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:867)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:796)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:142)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 common frames omitted
+2023-06-10 15:55:07 [WARN][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext][__refresh][591]-> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+2023-06-10 15:55:07 [INFO][org.apache.catalina.core.StandardService][log][173]-> Stopping service [Tomcat]
+2023-06-10 15:55:07 [INFO][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener][logMessage][136]-> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-10 15:55:07 [ERROR][org.springframework.boot.SpringApplication][reportFailure][819]-> Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:41002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:42008)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.DreamBBS.DreamBBSWebApplication.main(DreamBBSWebApplication.java:15)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 33 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 46 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:73)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:172)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	... 49 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1996)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:881)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2969)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:507)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:867)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:796)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:142)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 common frames omitted
+2023-06-10 16:00:32 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 460 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 16:00:32 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 16:00:32 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 16:00:32 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 16:00:32 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 16:00:32 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 16:00:33 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 16:00:33 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 920 ms
+2023-06-10 16:03:01 [ERROR][org.mybatis.spring.mapper.MapperFactoryBean][checkDaoConfig][82]-> Error while adding the mapper 'interface com.DreamBBS.mappers.UserInfoMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:73)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:172)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:41002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:42008)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.DreamBBS.DreamBBSWebApplication.main(DreamBBSWebApplication.java:15)
+Caused by: org.xml.sax.SAXParseException: 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1996)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:881)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2969)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:507)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:867)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:796)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:142)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 common frames omitted
+2023-06-10 16:03:01 [WARN][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext][__refresh][591]-> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+2023-06-10 16:03:05 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 24020 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 16:03:05 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 16:03:06 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 16:03:06 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 16:03:06 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 16:03:06 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 16:03:06 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 16:03:06 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 934 ms
+2023-06-10 16:06:04 [ERROR][org.mybatis.spring.mapper.MapperFactoryBean][checkDaoConfig][82]-> Error while adding the mapper 'interface com.DreamBBS.mappers.UserInfoMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:73)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:172)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:41002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:42008)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.DreamBBS.DreamBBSWebApplication.main(DreamBBSWebApplication.java:15)
+Caused by: org.xml.sax.SAXParseException: 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1996)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:881)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2969)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:507)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:867)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:796)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:142)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 common frames omitted
+2023-06-10 16:06:04 [WARN][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext][__refresh][591]-> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+2023-06-10 16:06:04 [INFO][org.apache.catalina.core.StandardService][log][173]-> Stopping service [Tomcat]
+2023-06-10 16:06:08 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 8940 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 16:06:08 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 16:06:09 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 16:06:09 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 16:06:09 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 16:06:09 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 16:06:09 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 16:06:09 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 932 ms
+2023-06-10 16:16:32 [ERROR][org.mybatis.spring.mapper.MapperFactoryBean][checkDaoConfig][82]-> Error while adding the mapper 'interface com.DreamBBS.mappers.UserInfoMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:73)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:172)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:41002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:42008)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.DreamBBS.DreamBBSWebApplication.main(DreamBBSWebApplication.java:15)
+Caused by: org.xml.sax.SAXParseException: 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1996)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:881)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2969)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:507)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:867)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:796)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:142)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 common frames omitted
+2023-06-10 16:16:32 [WARN][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext][__refresh][591]-> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoMapper' defined in file [E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-common\target\classes\com\DreamBBS\mappers\UserInfoMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 678; columnNumber: 10; 元素类型为 "mapper" 的内容必须匹配 "(cache-ref|cache|resultMap*|parameterMap*|sql*|insert*|update*|delete*|select*)+"。
+2023-06-10 16:16:34 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 2024 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 16:16:34 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 16:16:35 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 16:16:35 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 16:16:35 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 16:16:35 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 16:16:35 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 16:16:35 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 546 ms
+2023-06-10 16:16:35 [WARN][org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration][checkTemplateLocationExists][65]-> Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-06-10 16:16:35 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7070"]
+2023-06-10 16:16:35 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7070 (http) with context path '/api'
+2023-06-10 16:16:35 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarted][61]-> Started DreamBBSWebApplication in 1.253 seconds (JVM running for 1.688)
+2023-06-10 16:16:48 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 16:16:48 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2023-06-10 16:16:48 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 0 ms
+2023-06-10 16:16:48 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2023-06-10 16:16:48 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2023-06-10 16:16:48 [ERROR][com.DreamBBS.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:7070/api/register,错误信息:
+com.DreamBBS.exception.BusinessException: 邮箱账号已经存在
+2023-06-10 16:24:55 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2023-06-10 16:24:55 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2023-06-10 22:50:16 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarting][55]-> Starting DreamBBSWebApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 11428 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-web\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-10 22:50:16 [INFO][com.DreamBBS.DreamBBSWebApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-10 22:50:17 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7070 (http)
+2023-06-10 22:50:17 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7070"]
+2023-06-10 22:50:17 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-10 22:50:17 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-10 22:50:17 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-10 22:50:17 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1101 ms
+2023-06-10 22:50:18 [WARN][org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration][checkTemplateLocationExists][65]-> Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-06-10 22:50:18 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7070"]
+2023-06-10 22:50:18 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7070 (http) with context path '/api'
+2023-06-10 22:50:18 [INFO][com.DreamBBS.DreamBBSWebApplication][logStarted][61]-> Started DreamBBSWebApplication in 2.679 seconds (JVM running for 4.872)
+2023-06-10 22:50:24 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 22:50:24 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2023-06-10 22:50:24 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 0 ms
+2023-06-10 22:50:24 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2023-06-10 22:50:24 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2023-06-10 22:50:24 [ERROR][com.DreamBBS.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:7070/api/register,错误信息:
+com.DreamBBS.exception.BusinessException: 邮箱账号已经存在
+2023-06-10 22:59:52 [WARN][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider][doScan][166]-> No MyBatis mapper was found in '[com.DreamBBS.mappers]' package. Please check your configuration.
+2023-06-10 23:04:05 [WARN][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider][doScan][166]-> No MyBatis mapper was found in '[com.DreamBBS.mappers]' package. Please check your configuration.
+2023-06-10 23:18:44 [WARN][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider][doScan][166]-> No MyBatis mapper was found in '[com.DreamBBS.mappers]' package. Please check your configuration.
+2023-06-10 23:26:05 [WARN][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider][doScan][166]-> No MyBatis mapper was found in '[com.DreamBBS.mappers]' package. Please check your configuration.
+2023-06-10 23:26:12 [ERROR][com.DreamBBS.controller.AGlobalExceptionHandlerController][handleException][25]-> 请求错误，请求地址http://localhost:7070/api/login,错误信息:
+com.DreamBBS.exception.BusinessException: 账号或者密码错误
+2023-06-10 23:26:29 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2023-06-10 23:26:29 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
