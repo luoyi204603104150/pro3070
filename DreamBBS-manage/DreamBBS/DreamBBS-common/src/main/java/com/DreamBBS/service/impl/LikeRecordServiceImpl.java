@@ -191,15 +191,15 @@ public class LikeRecordServiceImpl implements LikeRecordService {
 				userMessage.setReceivedUserId(forumArticle.getUserId());
 				break;
 			case COMMENT_LIKE:
-				/*likeRecord = commentLike(objectId, userId, opTypeEnum);
+				likeRecord = commentLike(objectId, userId, opTypeEnum);
 				ForumComment forumComment = forumCommentMapper.selectByCommentId(Integer.parseInt(objectId));
 				ForumArticle commentArticle = forumArticleMapper.selectByArticleId(forumComment.getArticleId());
 				userMessage.setArticleId(commentArticle.getArticleId());
-				userMessage.setArticleTitle(commentArticle.getTitle());
+				userMessage.setArticleTitle("用户点赞提醒");
 				userMessage.setMessageType(MessageTypeEnum.COMMENT_LIKE.getType());
 				userMessage.setCommentId(Integer.parseInt(objectId));
 				userMessage.setReceivedUserId(forumComment.getUserId());
-				userMessage.setMessageContent(forumComment.getContent());*/
+				userMessage.setMessageContent(forumComment.getContent());
 				break;
 		}
 		userMessage.setSendUserId(userId);
@@ -237,8 +237,7 @@ public class LikeRecordServiceImpl implements LikeRecordService {
 	}
 
 
-	//***
-	/*public LikeRecord commentLike(String objectId, String userId, OperRecordOpTypeEnum opTypeEnum) {
+	public LikeRecord commentLike(String objectId, String userId, OperRecordOpTypeEnum opTypeEnum) {
 		LikeRecord record = this.likeRecordMapper.selectByObjectIdAndUserIdAndOpType(objectId, userId, opTypeEnum.getType());
 		if (record != null) {
 			this.likeRecordMapper.deleteByObjectIdAndUserIdAndOpType(objectId, userId, opTypeEnum.getType());
@@ -258,7 +257,7 @@ public class LikeRecordServiceImpl implements LikeRecordService {
 			forumCommentMapper.updateCommenCount(1, Integer.parseInt(objectId));
 		}
 		return record;
-	}*/
+	}
 
 
 }

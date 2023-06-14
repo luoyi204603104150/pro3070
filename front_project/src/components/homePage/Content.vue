@@ -2,20 +2,30 @@
   <div class="homePageContent">
     <el-table
       :data="
-        tableData.slice((currentPage - 1) * pageSize, currentPage * pageSize)
+        articleListData.slice(
+          (currentPage - 1) * pageSize,
+          currentPage * pageSize
+        )
       "
       style="width: 100%"
+      row-key="articleId"
       @row-click="click"
     >
       <el-table-column
-        prop="date"
+        prop="postTime"
         label="发帖时间"
         width="180"
         align="center"
       />
-      <!-- 居中显示，红色原因不明 -->
-      <el-table-column prop="name" label="作者" width="180" align="center" />
-      <el-table-column prop="address" label="内容简述" align="center" />
+
+      <!-- align="center"意为居中显示，红色原因不明 -->
+      <el-table-column
+        prop="nickName"
+        label="作者"
+        width="180"
+        align="center"
+      />
+      <el-table-column prop="summary" label="内容简述" align="center" />
     </el-table>
 
     <el-pagination
@@ -24,25 +34,19 @@
       :page-size="pageSize"
       :current-page="currentPage"
       @current-change="handleCurrentChange"
-      :total="tableData.length"
+      :total="articleListData.length"
       style="margin-top: 20px"
     />
   </div>
 </template>
 
 <script setup>
-const props = defineProps({
-  tableData: {
-    type: Object,
-  },
-});
-
 import { useRouter } from "vue-router";
 import { ref } from "vue";
 
 const router = useRouter();
-function click() {
-  router.push("/info");
+function click(row) {
+  router.push({ path: `/info/${row.articleId}` });
 }
 
 let currentPage = ref(1); // 当前页码
@@ -52,6 +56,14 @@ const pageSize = 5; // 每页显示的条数
 const handleCurrentChange = (val) => {
   currentPage.value = val;
 };
+
+import { articleList } from "../../requests/api";
+
+const articleListData = ref("");
+async function getdata() {
+  articleListData.value = await articleList();
+}
+getdata();
 </script>
 
 <style scoped>

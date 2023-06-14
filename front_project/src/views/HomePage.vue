@@ -1,38 +1,24 @@
 <script setup>
-import Sidebar from "../components/homePage/Sidebar.vue";
+import LoginBox from "../components/homePage/LoginBox.vue";
 import Header from "../components/homePage/HomePageHeader.vue";
 import RotationChart from "../components/homePage/RotationChart.vue";
 import Content from "../components/homePage/Content.vue";
+import ForumPost from "../components/homePage/ForumPost.vue";
 
-const props = defineProps({
-  tabletData: {
-    type: Object,
-  },
-});
+defineProps({ tabletData: { type: Object } });
 
 const tableData = [
-  { date: "2016-05-03", name: "Tom", address: "阿巴巴巴吧" },
-  { date: "2016-05-02", name: "Tom", address: "666666666666666666666666666" },
-  { date: "2016-05-04", name: "Tom", address: "快看何润生在天上飞" },
-  {
-    date: "2016-05-01",
-    name: "Tom",
-    address: "111111111111111111111111111111",
-  },
-  {
-    date: "2016-05-01",
-    name: "Tom",
-    address: "111111111111111111111111111111",
-  },
-  {
-    date: "2016-05-01",
-    name: "Tom",
-    address: "111111111111111111111111111111",
-  },
+  { date: "2023-05-03", name: "Tom", address: "阿巴巴巴吧", id: "1" },
+  { date: "2023-05-03", name: "Tom", address: "6666666666666", id: "2" },
+  { date: "2023-05-03", name: "Tom", address: "快看何润生在天上飞", id: "3" },
+  { date: "2023-05-03", name: "Tom", address: "111111111111", id: "4" },
+  { date: "2016-05-01", name: "Tom", address: "111111111111", id: "5" },
+  { date: "2016-05-01", name: "Tom", address: "1111111111111", id: "6" },
 ];
 </script>
 
 <template>
+  <ForumPost></ForumPost>
   <el-container>
     <el-container>
       <el-header>
@@ -45,11 +31,11 @@ const tableData = [
     </el-container>
 
     <el-aside width="350px">
-      <Sidebar></Sidebar>
+      <LoginBox></LoginBox>
     </el-aside>
   </el-container>
 
-  <Content class="interval" :tableData="tableData"></Content>
+  <Content class="interval"></Content>
 </template>
 
 <style>

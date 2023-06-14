@@ -50,13 +50,9 @@ public class ForumArticleController extends ABaseController {
     private ForumArticleService forumArticleService;
 
     @Resource
-    private ForumArticleAttachmentService forumArticleAttachmentService;
-
-    @Resource
-    private ForumArticleAttachmentDownloadService forumArticleAttachmentDownloadService;
-
-    @Resource
     private LikeRecordService likeRecordService;
+
+
 
     @Resource
     private UserInfoService userInfoService;
@@ -118,6 +114,62 @@ public class ForumArticleController extends ABaseController {
             throw new BusinessException("没登陆你点勾8赞呢");
         }
     }
+
+    @RequestMapping("/loadBoard4Post")
+    public ResponseVO loadBoard4Post(HttpSession session) {
+        SessionWebUserDto userDto = getUserInfoFromSession(session);
+        if(userDto!=null){
+            Integer postType = null;
+            //判断管理员(管理员界面被阉割了不过还是写一下)
+            if (!userDto.getAdmin()) {
+                postType = 1;
+            }
+            return getSuccessResponseVO(forumBoardService.getBoardTree(postType));
+        }else {
+            throw new BusinessException(ResponseCodeEnum.CODE_502);
+        }
+    }
+
+    @RequestMapping("/postArticle")
+     /*
+     cover封面,
+     pBoardId主板块id
+     boardId二级板块id
+     title标题
+     content内容
+     markdownContent md文本编辑器内容
+     editorType编辑器类型
+     summary摘要
+     */
+    public ResponseVO postArticle(HttpSession session, MultipartFile cover, Integer pBoardId, Integer boardId, String title, String content, String markdownContent, Integer editorType, String summary) {
+
+        title = StringTools.escapeTitle(title);
+        SessionWebUserDto userDto = getUserInfoFromSession(session);
+
+        if(userDto!=null){
+            ForumArticle forumArticle = new ForumArticle();
+            forumArticle.setpBoardId(pBoardId);
+            forumArticle.setBoardId(boardId);
+            forumArticle.setTitle(title);
+            forumArticle.setContent(content);
+            if (EditorTypeEnum.MARKDOWN.getType().equals(editorType) && StringTools.isEmpty(markdownContent)) {
+                throw new BusinessException(ResponseCodeEnum.CODE_600);
+            }
+            forumArticle.setMarkdownContent(markdownContent);
+            forumArticle.setEditorType(editorType);
+            forumArticle.setSummary(summary);
+            forumArticle.setUserId(userDto.getUserId());
+            forumArticle.setNickName(userDto.getNickName());
+            forumArticle.setUserIpAddress(userDto.getProvince());
+
+            forumArticleService.postArticle(userDto.getAdmin(),forumArticle, cover);
+            return getSuccessResponseVO(forumArticle.getArticleId());
+        }else {
+            throw new BusinessException(ResponseCodeEnum.CODE_502);
+        }
+
+    }
+
 
 
 }

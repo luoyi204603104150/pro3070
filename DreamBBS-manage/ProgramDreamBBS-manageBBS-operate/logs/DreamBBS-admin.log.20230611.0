@@ -1,0 +1,29 @@
+2023-06-11 16:16:00 [INFO][com.DreamBBS.DreamBBSAdminApplication][logStarting][55]-> Starting DreamBBSAdminApplication using Java 1.8.0_371 on DESKTOP-813167Q with PID 26120 (E:\Program\DreamBBS-manage\DreamBBS\DreamBBS-admin\target\classes started by Ender in E:\Program\DreamBBS-manage)
+2023-06-11 16:16:00 [INFO][com.DreamBBS.DreamBBSAdminApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2023-06-11 16:16:01 [WARN][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider][doScan][166]-> No MyBatis mapper was found in '[com.DreamBBS]' package. Please check your configuration.
+2023-06-11 16:16:02 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7071 (http)
+2023-06-11 16:16:02 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7071"]
+2023-06-11 16:16:02 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2023-06-11 16:16:02 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-06-11 16:16:02 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2023-06-11 16:16:02 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1556 ms
+2023-06-11 16:16:02 [WARN][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext][__refresh][591]-> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emailCodeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.DreamBBS.mappers.EmailCodeMapper<com.DreamBBS.entity.po.EmailCode, com.DreamBBS.entity.query.EmailCodeQuery>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-06-11 16:16:02 [INFO][org.apache.catalina.core.StandardService][log][173]-> Stopping service [Tomcat]
+2023-06-11 16:16:02 [INFO][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener][logMessage][136]-> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-11 16:16:02 [ERROR][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter][report][40]-> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.DreamBBS.mappers.EmailCodeMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.DreamBBS.mappers.EmailCodeMapper' in your configuration.
+

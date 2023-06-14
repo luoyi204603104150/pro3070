@@ -7,7 +7,11 @@ public enum ResponseCodeEnum {
     CODE_600(600, "请求参数有误"),
     CODE_601(601, "信息已经存在"),
     CODE_500(500, "你传了什么勾8,快tm叫何润生看后台"),
-    CODE_900(500, "HTTP请求超时");
+    CODE_501(501, "文件类型有误"),
+    CODE_502(502, "没登陆你点勾8赞呢"),
+    CODE_503(503, "上传失败"),
+    CODE_900(900, "HTTP请求超时");
+
     private Integer code;
 
     private String msg;
