@@ -4,6 +4,8 @@ public class Constants {
     public static final Integer ZERO = 0;
 
     public static final Integer integral_5 =5;
+
+    public static final Integer PostArticle_integral =5;
     public static final Integer ONE = 1;
 
     public static final Integer LENGTH_30 = 30;

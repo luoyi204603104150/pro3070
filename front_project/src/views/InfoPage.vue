@@ -1,5 +1,4 @@
 <script setup>
-import { getName } from "../requests/index";
 import Breadcrumb from "../components/infoPage/Breadcrumb.vue";
 import Content from "../components/infoPage/InfoPageContent.vue";
 import Input from "../components/infoPage/Input.vue";

@@ -7,6 +7,7 @@ import com.DreamBBS.entity.enums.UserIntegralOperTypeEnum;
 import com.DreamBBS.entity.query.UserInfoQuery;
 import com.DreamBBS.entity.po.UserInfo;
 import com.DreamBBS.entity.vo.PaginationResultVO;
+import org.springframework.web.multipart.MultipartFile;
 
 
 /**
@@ -111,8 +112,10 @@ public interface UserInfoService {
 	void register(String email,String nickName,String password);
 	void updateUserIntegral(String userId, UserIntegralOperTypeEnum operTypeEnum, Integer changeType, Integer integral);
 
+
 	SessionWebUserDto login(String email, String password, String ip);
 
 	void resetPwd(String email, String password);
 
+	void updateUserInfo(UserInfo userInfo, MultipartFile avatar);
 }

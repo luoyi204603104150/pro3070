@@ -1,10 +1,16 @@
 package com.DreamBBS.service;
 
+import java.util.Date;
 import java.util.List;
 
+import com.DreamBBS.entity.po.ForumArticle;
+import com.DreamBBS.entity.po.UserInfo;
 import com.DreamBBS.entity.query.ForumCommentQuery;
 import com.DreamBBS.entity.po.ForumComment;
 import com.DreamBBS.entity.vo.PaginationResultVO;
+import com.DreamBBS.utils.StringTools;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
 
 
 /**
@@ -71,4 +77,6 @@ public interface ForumCommentService {
 
 
 	void changeTopType(String userId, Integer commentId, Integer topType);
+
+	void postComment(ForumComment comment, MultipartFile file);
 }
