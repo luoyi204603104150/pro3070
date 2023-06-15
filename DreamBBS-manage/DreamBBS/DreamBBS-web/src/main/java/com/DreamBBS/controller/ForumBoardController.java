@@ -3,6 +3,7 @@ package com.DreamBBS.controller;
 import com.DreamBBS.controller.ABaseController;
 import com.DreamBBS.entity.vo.ResponseVO;
 import com.DreamBBS.service.ForumBoardService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

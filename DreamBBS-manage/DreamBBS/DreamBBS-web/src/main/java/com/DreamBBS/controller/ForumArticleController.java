@@ -19,6 +19,7 @@ import com.DreamBBS.utils.CopyTools;
 import com.DreamBBS.utils.StringTools;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -79,6 +80,13 @@ public class ForumArticleController extends ABaseController {
         return getSuccessResponseVO(convert2PaginationVO(resultVO, ForumArticleVO.class));
     }
 
+    @RequestMapping("/search")
+    public ResponseVO loadBoard4Post(String keyword) {
+        ForumArticleQuery query = new ForumArticleQuery();
+        query.setTitleFuzzy(keyword);
+        PaginationResultVO result = forumArticleService.findListByPage(query);
+        return getSuccessResponseVO(result);
+    }
 
     @RequestMapping("/getArticleDetail")
     public ResponseVO getArticleDetail(HttpSession session, String articleId) {
@@ -111,7 +119,7 @@ public class ForumArticleController extends ABaseController {
             likeRecordService.doLike(articleId, userDto.getUserId(), userDto.getNickName(), OperRecordOpTypeEnum.ARTICLE_LIKE);
             return getSuccessResponseVO(null);
         }else {
-            throw new BusinessException("没登陆你点勾8赞呢");
+            throw new BusinessException(ResponseCodeEnum.CODE_502);
         }
     }
 
@@ -169,7 +177,5 @@ public class ForumArticleController extends ABaseController {
         }
 
     }
-
-
 
 }

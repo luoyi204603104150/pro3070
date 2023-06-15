@@ -13,6 +13,7 @@ import com.DreamBBS.exception.BusinessException;
 import com.DreamBBS.service.ForumCommentService;
 import com.DreamBBS.service.LikeRecordService;
 import com.DreamBBS.utils.StringTools;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -74,8 +75,13 @@ public class ForumCommentController extends ABaseController {
     @RequestMapping("/changeTopType")
     public ResponseVO changeTopType(HttpSession session,Integer commentId,Integer topType) {
         SessionWebUserDto userDto = getUserInfoFromSession(session);
-        forumCommentService.changeTopType(userDto.getUserId(), commentId, topType);
-        return getSuccessResponseVO(null);
+        if(userDto!=null){
+            forumCommentService.changeTopType(userDto.getUserId(), commentId, topType);
+            return getSuccessResponseVO(null);
+        }else {
+            throw new BusinessException(ResponseCodeEnum.CODE_502);
+        }
+
     }
 
     @RequestMapping("/postComment")

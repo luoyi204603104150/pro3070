@@ -6,9 +6,7 @@ import com.DreamBBS.entity.po.UserInfo;
 import com.DreamBBS.entity.vo.ResponseVO;
 import com.DreamBBS.service.UserInfoService;
 import com.DreamBBS.service.impl.UserInfoServiceImpl;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -45,7 +43,7 @@ public class AccountController extends ABaseController{
 
     //登入
     @RequestMapping("/login")
-    public ResponseVO login(HttpSession session, HttpServletRequest request,String email,String password) {
+    public ResponseVO login(HttpSession session, HttpServletRequest request, String email, String password) {
         SessionWebUserDto sessionWebUserDto = userInfoService.login(email, password, getIpAddr(request));
         session.setAttribute(Constants.SESSION_KEY, sessionWebUserDto);
         return getSuccessResponseVO(null);
@@ -54,8 +52,7 @@ public class AccountController extends ABaseController{
     //获取用户信息
     @RequestMapping("/getUserInfo")
     public ResponseVO getUserInfo(HttpSession session) {
-        SessionWebUserDto sessionWebUserDto = getUserInfoFromSession(session);
-        return getSuccessResponseVO(sessionWebUserDto);
+        return getSuccessResponseVO(getUserInfoFromSession(session));
     }
 
     //退出登录

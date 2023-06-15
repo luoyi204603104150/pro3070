@@ -246,5 +246,6 @@ public class ForumArticleServiceImpl implements ForumArticleService {
 			article.setBoardName("");
 		}
 	}
+	public void searchArticle(){}
 
 }

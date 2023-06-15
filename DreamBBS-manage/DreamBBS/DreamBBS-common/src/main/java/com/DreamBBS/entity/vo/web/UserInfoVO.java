@@ -32,6 +32,7 @@ public class UserInfoVO implements Serializable {
      */
     private String personDescription;
 
+
     /**
      * 加入时间
      */
@@ -44,6 +45,7 @@ public class UserInfoVO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Date lastLoginTime;
 
+    private String lastLoginIpAddress;
     /**
      * 当前积分
      */
@@ -129,5 +131,13 @@ public class UserInfoVO implements Serializable {
 
     public void setCurrentIntegral(Integer currentIntegral) {
         this.currentIntegral = currentIntegral;
+    }
+
+    public String getlastLoginIpAddress() {
+        return lastLoginIpAddress;
+    }
+
+    public void setLastLoginIpAddress(String lastLoginIpAddress) {
+        this.lastLoginIpAddress = lastLoginIpAddress;
     }
 }

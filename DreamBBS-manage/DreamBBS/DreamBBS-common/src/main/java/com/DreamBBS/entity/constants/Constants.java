@@ -64,4 +64,6 @@ public class Constants {
     public static final Integer FILE_SIZE_1M = 1024 * 1024;
 
     public static final String PRO_UNKNOWN = "未知";
+
+    public static final String REGISTER_MESSAGE = "感觉画质不如原神";
 }
